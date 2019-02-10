@@ -1,0 +1,25 @@
+<div id="operationBody" *ngIf="todo">
+  <label>ID:
+    <input [(ngModel)]="todo.id" placeholder="name"/>
+  </label>
+  <label>Title:
+    <input [(ngModel)]="todo.name" placeholder="name"/>
+  </label>
+  <label>Expiry Date:
+    <input [(ngModel)]="todo.expiryDate" placeholder="name"/>
+  </label>
+  <label>Done:
+    <input type="checkbox" [(ngModel)]="todo.isComplete" placeholder="name"/>
+  </label>
+  <form>
+    <select id="User" name="User">
+      <option value="Null">No User Selected</option>
+      <option *ngFor="let user of users" value="{{user.id}}">{{user.id}} - {{user.username}}</option>
+    </select>
+    <a routerlink="/user-list">List of Users</a>
+  </form>
+  <textarea [(ngModel)]="todo.textBox" name="Description" id="" cols="30" rows="10">{{todo.textBox}}</textarea>
+  <button (click)="goBack()">go back</button>
+  <button (click)="save()">save</button>
+</div>
+

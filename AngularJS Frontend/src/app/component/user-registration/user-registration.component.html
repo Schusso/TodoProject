@@ -1,0 +1,52 @@
+
+<div class="container">
+  <h2 class="row">Registrierung</h2>
+  <form>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Username">Username</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Username" name="Username" placeholder="Your Username..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="email" id="email" name="email" placeholder="Your email..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="pw">Password</label>
+      </div>
+      <div class="col-75">
+        <input type="password" id="pw" name="password" placeholder="password">
+      </div>
+    </div>
+    <div class="row">
+      <input (click)="add()" type="submit" value="Submit">
+      <input (click)="goBack()" type="submit" value="Go Back" >
+    </div>
+
+  </form>
+
+</div>

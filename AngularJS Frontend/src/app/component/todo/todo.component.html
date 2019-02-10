@@ -1,0 +1,24 @@
+<div id="operationBody">
+<div id="middleBody"><table id="customers">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Done</th>
+    <th>Text</th>
+    <th>Expiry Date</th>
+    <th>User</th>
+    <th></th>
+  </tr><tr routerLink="/todo-Item/{{todo.id}}" *ngFor="let todo of todos">
+    <td>{{todo.id}}</td>
+    <td>{{todo.name}}</td>
+    <td>{{todo.isComplete}}</td>
+  <td>{{todo.textBox}}</td>
+  <td>{{todo.expiryDate}}</td>
+    <td>{{todo.user}}</td>
+    <td><Button (click)="delete(todo)" >Delete</Button></td>
+  </tr>
+</table>
+</div>
+<app-user id="rightBody"></app-user>
+</div>
+<p>*Click on the Todo u want to change</p>
